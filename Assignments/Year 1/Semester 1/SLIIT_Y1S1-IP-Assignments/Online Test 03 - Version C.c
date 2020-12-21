@@ -18,8 +18,9 @@ int main()
     int counterLargeNo = 0; // counter to display large no;
     
     //Input no Series'
+    
+    printf("Enter the number series: "); // display enter the number series
     while (counter < SIZE) {
-        printf("Enter the number series: "); // display enter the number series
         scanf("%d", &noSeries); // Take input
         
         myArray[counter] = noSeries; // store input no in noSeries array
@@ -51,7 +52,7 @@ int main()
     
     // Display larger no's
     printf("\nlargeNum : ");
-    for(i = 0; i < SIZE ; i++) {
+    for(i = 0; i < counterLargeNo ; i++) {
         if (largeNum[i] != 0)
             printf("%d ", largeNum[i]);
     }
